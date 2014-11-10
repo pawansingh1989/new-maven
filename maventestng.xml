@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Maven">
+	<test name="jenkins">
+		<classes>
+			<class name="test.check.Check"></class>
+			<class name="test.check.Test1"></class>
+		</classes>
+	</test>
+</suite>
