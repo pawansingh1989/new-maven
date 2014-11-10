@@ -4,6 +4,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -30,6 +31,11 @@ public class Check
 		System.out.println(driver.getCurrentUrl());
 		
 		
+	}
+	@AfterMethod
+	public void destroy()
+	{
+		driver.quit();
 	}
 
 }
